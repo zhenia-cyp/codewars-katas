@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.exaples{
+    margin-top: 15px;
+}
+
+.text > p{
+    font-size: 1.1em;
+
+}
