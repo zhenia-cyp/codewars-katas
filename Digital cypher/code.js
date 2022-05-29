@@ -1,12 +1,10 @@
 function encode(str,n){
-   
     const base = createObject();
     console.log('base: ',base); 
     const code =[];
     for(let i of str){
         code.push(base[i]);
     }
-    
     const sequence = createSequnce(n,code);
     //суммируем значения из двух масивов sequence и сode
     const result = code.map((item,index)=>item+sequence[index])
@@ -23,7 +21,6 @@ function createSequnce(n,code){
     }
     // делаем из вложенного масива одиночный
     const singlearray = [].concat.apply([], arr);
-    
     // получаем последовательность цифр столько сколько и цифр из code
     let counter=0;
     sequen=[];
@@ -47,7 +44,6 @@ function createObject(){
     }
     return obj
 }
-
 const res = encode("scout",1939);
 console.log('res: ',res);    
 
